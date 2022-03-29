@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu 2</title>
-    <link rel="stylesheet" href="/css/reset.min.css">
-    <link rel="stylesheet" href="/css/menudropdowm.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Dropdown</title>
+  <link rel="stylesheet" href="/css/menudropdowm.css">
 </head>
+
 <body>
-    <header>
-        <span>Menu Dropdowm</span>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <div class="dropdown">
-            <button class="dropButton">
-                <span>Setores</span>
-            </button>
-            <div class="dropLinks">
-                <a href="#">Estudios</a>
-                <a href="#">Cursos</a>
-                <a href="#">Produtos</a>
-                </div>
-                </div>
-            </nav>
+  <header>Menu Dropdown</header>
+  <nav class="menu-d">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li>
+        <button class="botao-dropdown">
+          <a href="#">Setores</a>
+          <div class="dropdown">
+            <div class="itens">Estudio</div>
+            <div class="itens">Cursos</div>
+            <div class="itens">Produtos</div>
+          </div>
+        </button>
+      </li> 
+
+    </ul>
+
+  </nav>
+
 </body>
+
 </html>

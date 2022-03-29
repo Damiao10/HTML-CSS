@@ -1,60 +1,57 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
 }
 
-header {
-background-color: #000;
-color:#eee;
-padding: 1em;
-}
-header span {
-    font-size: 1.7em;
+header{
+    background-color: black;
+    color: white;
+    height: 50px;
     font-weight: bold;
-}
-/*MENU*/
-
-nav{
-    overflow: hidden;
-    background-color: #333;
+    font-size: 1.5em;
+    padding: 15px;
 }
 
-nav a {
-    float: left;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    padding: 13px;
-    text-decoration: none;
+.menu-d {
+    background-color: grey;
+    color: white;
+    height: 50px;
+    padding: 1em;
+}
 
+.menu-d ul li {
+    list-style: none;
+    display: inline;
 }
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropdown .dropButton {
-    font-size: 16px;
+
+.menu-d ul li button{
+    background-color: grey;
     border: none;
-    outline: none;
-    color: #fff;
-    padding: 14px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
 }
-nav a:hover, .dropdown:hover .dropButton {
-    background-color: #C00;
-}
-.dropLinks {
-    position: absolute;
-    background-color: #777;
-    min-height: 160px;
-    z-index: 1;
-}
-.dropLinks:hover {
-    background-color: #900;
-}
-.dropLinks:hover .dropLinks {
-    display: grid;
 
+a{
+    text-decoration: none;
+    color: white;
 }
+
+a:hover{
+    background-color: red;
+}
+
+
+.dropdown {
+    display: none;
+    cursor: pointer;
+}
+
+.botao-dropdown:hover .dropdown {
+    display: block;
+}
+
+.itens:hover {
+    background-color: red;
+}
+
